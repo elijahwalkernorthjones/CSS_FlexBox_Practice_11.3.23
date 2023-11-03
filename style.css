@@ -1,0 +1,80 @@
+
+
+.centerContainer {
+    width: 60vw;
+    height: 90vh;
+    border: 1px solid black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.chakraManContainer {
+        width: 50vw;
+        height: 80vh;
+        border: 2px solid rgb(82, 82, 82);
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.chakraManContainer img {
+    position: absolute;
+    max-width: 140%;
+    max-height: 140%;
+    transform: translate(0, -14%);
+}
+
+.chakraContainer {
+    width: 3em;
+    height: 100%;
+    max-height: 75%;
+    border: 2px solid rgb(234, 19, 19);
+    position: relative;
+    display: flex; 
+    transform: translate(3%, -5%);
+    flex-direction: column;
+    justify-content: space-between; 
+    align-items: center;  
+}
+
+.chakras {
+    width: 35px;
+    height: 35px;
+    max-width: 100%;
+    max-width: 100%;
+    border-radius: 50%;
+    background-color: rgb(67,117,105);
+    transition: all 0.4s;
+}
+.chakras:hover{
+background-color: rgb(123, 169, 138);
+    cursor: pointer;
+}
+
+#chakra1 {
+    background-color: rgb(213, 167, 234);
+}
+#chakra1:hover {
+    background-color: rgb(239, 215, 251);
+}
+
+.infoContainer {
+    width: 26.5vw;
+    height: 90vh;
+    border: 2px solid rgb(47, 193, 47);
+    position: absolute;
+    top: 4.87%;
+    left: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
