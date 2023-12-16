@@ -6,7 +6,7 @@ body {
 .centerContainer {
     width: 60vw;
     height: 90vh;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     position: absolute;
     top: 50%;
     left: 50%;
@@ -18,15 +18,16 @@ body {
 
 
 .chakraManContainer {
-        width: 55vw;
+        width: 40vw;
         height: 85vh;
         max-width: auto;
         max-height: auto;
-        border: 2px solid rgb(82, 82, 82);
-        position: absolute;
+        /* border: 2px solid rgb(82, 82, 82); */
+        position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
+
 }
 
 .chakraManContainer img {
@@ -34,21 +35,48 @@ body {
     width: 40em;
     height: 70em;
     height: fit-content;
-    /* transform: translate(0, -19%); */
-    animation: hoverAnimation 5s ease-in-out infinite alternate; 
+    animation: hoverAnimation 6.3s ease-in-out infinite alternate;
+     
 }
+
+.chakraManContainer::after {
+    content: "";
+    position: absolute;
+    width: 40%; /* Set width to cover the entire image */
+    height: 18px; /* Set the height of the shadow */
+    bottom: 0; /* Position at the bottom of the container */
+    transform: translate(7px);
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.3); /* Shadow color and transparency */
+    border-radius: 100%; /* Make the shadow oval-shaped */
+    animation: shadowAnimation 6.3s ease-in-out infinite alternate;
+}
+
 
 @keyframes hoverAnimation {
     0% {
         transform: translate(0, -19%);
     }
-    50% {
-        transform: translate(0, -110px); /* Move up by 20px */
+    48% {
+        transform: translate(0, -113px); /* Move up by 20px */
     }
+    /* 99% {
+        transform: translate(0, -18.9);
+    } */
     100% {
         transform: translate(0, -19%);
     }
 }
+
+@keyframes shadowAnimation {
+    0%, 100% {
+        width: 52%;
+    }
+    48% {
+        width: 45%; /* Decrease shadow width at the bottom */
+    }
+}
+
 
 .chakraContainer {
     width: 10vw;
@@ -136,7 +164,7 @@ body {
 .infoContainer {
     width: 26vw;
     height: 89.7vh;
-    border: 2px solid rgb(47, 193, 47);
+    /* border: 2px solid rgb(47, 193, 47); */
     position: absolute;
     top: 4.87%;
     left: 2%;
@@ -186,7 +214,7 @@ body {
  
 .clouds-container {
     position: absolute;
-    border: 3px solid blue;
+    /* border: 3px solid blue; */
     width: 100%;
     height: 30%;
     overflow: hidden;
