@@ -34,7 +34,20 @@ body {
     width: 40em;
     height: 70em;
     height: fit-content;
-    transform: translate(0, -17%);
+    /* transform: translate(0, -19%); */
+    animation: hoverAnimation 5s ease-in-out infinite alternate; 
+}
+
+@keyframes hoverAnimation {
+    0% {
+        transform: translate(0, -19%);
+    }
+    50% {
+        transform: translate(0, -110px); /* Move up by 20px */
+    }
+    100% {
+        transform: translate(0, -19%);
+    }
 }
 
 .chakraContainer {
@@ -181,14 +194,14 @@ body {
 
 .cloud {
     position: absolute;
-    width: 10%; /* adjust the size of your cloud image */
+    width: 10%; 
     height: 90%;
     object-fit: contain;
     animation: scrollClouds1 150s linear infinite;
 }
 .cloud2 {
     position: absolute;
-    width: 50%; /* adjust the size of your cloud image */
+    width: 50%; 
     height: 150%;
     object-fit: contain;
     animation: scrollClouds2 90s linear infinite;

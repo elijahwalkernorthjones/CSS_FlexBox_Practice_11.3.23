@@ -1,5 +1,11 @@
+
+
+
+
 const chakras = document.querySelectorAll('.chakras');
 
+
+// TOGGLE CLASS FUNCTION TO ENLARGE CHAKRAS ON CLICK & ADD LARGE CHAKRA CLASS
 chakras.forEach((chakra) => {
   chakra.addEventListener('click', (e) => {
     e.preventDefault();
